@@ -1,0 +1,30 @@
+.cardContainer {
+  width: 300px;
+  background: rgb(78, 78, 76);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+
+  .imageFilme {
+    width: 100%;
+  }
+
+  .favorite {
+    width: 30px;
+  }
+
+  .details {
+    display: flex;
+  }
+
+  button {
+    border-radius: 10px;
+    border-style: outset;
+    border-color: #0066a2;
+    height: 50px;
+    width: 100px;
+    font: bold15px arial, sans-serif;
+    text-shadow: none;
+  }
+}

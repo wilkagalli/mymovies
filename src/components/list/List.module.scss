@@ -1,0 +1,8 @@
+.List {
+  background: rgb(48, 41, 42);
+  display: flex;
+
+  grid-template-columns: 350px 4fr;
+  padding: 50px;
+  flex-wrap: wrap;
+}
