@@ -1,5 +1,5 @@
 .cardContainer {
-  width: 300px;
+  width: 200px;
   background: #1a1a1a;
   display: flex;
   flex-direction: column;
@@ -20,26 +20,21 @@
       color: #c78c19;
     }
   }
-}
-.cardContent {
-  padding: 5px;
-  width: 100%;
+
+  .cardContent {
+    padding: 5px;
+    width: 100%;
+  }
 
   h2 {
     color: white;
     text-align: center;
-    height: 75px;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 2;
-    display: -webkit-box;
   }
 }
 
 p {
   color: white;
-  // margin: 10px;
+  margin: 10px;
   font-size: 20px;
 }
 
@@ -103,12 +98,6 @@ button {
 
 .botaoPlay {
   width: 25px;
-  margin: 5px;
-}
-
-.rating {
-  margin: 0 5px;
-  color: white;
 }
 
 .date {

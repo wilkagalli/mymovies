@@ -1,0 +1,51 @@
+.homeSection {
+  grid-column: span 3;
+  width: auto;
+  background-color: black;
+  height: auto;
+  padding: 50px;
+  display: block;
+  align-items: center;
+}
+
+.homeContainer {
+  color: white;
+  display: block;
+  width: auto;
+  align-items: center;
+  padding: 20px;
+  margin: 0px 200px;
+}
+
+.favHome {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  font-size: 1.5rem;
+
+  h3 {
+    font-size: 2.4rem;
+    margin: 0;
+  }
+
+  div {
+    font-size: 1rem;
+  }
+}
+
+.homeContent {
+  color: white;
+
+  display: block;
+  padding: 20px;
+  margin: 0 200px;
+  position: relative;
+
+  align-items: center;
+}
+
+.cardHome {
+  width: 200px;
+  align-items: center;
+  padding: 20px;
+}

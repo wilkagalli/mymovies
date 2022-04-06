@@ -1,0 +1,29 @@
+.ListSlide {
+  background: #000;
+  display: flex;
+  column-gap: 10px;
+  overflow: hidden;
+
+  > div {
+    min-width: 200px;
+  }
+}
+
+.btn {
+  position: absolute;
+  top: 40%;
+
+  img {
+    width: 64px;
+  }
+}
+
+.btnLeft {
+}
+
+.btnRight {
+  right: 0;
+}
+
+span {
+}

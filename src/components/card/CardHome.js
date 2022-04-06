@@ -1,20 +1,12 @@
 import React, { useState } from "react";
 import { useRef } from "react/cjs/react.development";
 import HeartOutiline from "../icons/HeartOutiline";
-import styles from "./Card.module.scss";
+import styles from "./CardHome.module.scss";
 
 // import { Container } from './styles';
 
 // let favorite = [];
-function Card({
-  image,
-  title,
-  rating,
-  date,
-  initialFavorite,
-  customClass,
-  type,
-}) {
+function CardHome({ image, title, rating, date, initialFavorite }) {
   const [isFavorite, setIsFavorite] = useState(initialFavorite);
 
   function toggleFavorite() {
@@ -26,33 +18,23 @@ function Card({
       JSON.parse(localStorage.getItem("favorites")) || [];
 
     if (favoriteStateAtualizado) {
-      favoritesAtualizada = [
-        ...favoritesStorage,
-        { title, image, rating, date, initialFavorite, type },
-      ];
+      favoritesAtualizada = [...favoritesStorage, title];
     } else {
-      favoritesStorage.splice(
-        favoritesStorage.findIndex((item) => item.title === title),
-        1
-      );
+      favoritesStorage.splice(favoritesStorage.indexOf(title), 1);
       favoritesAtualizada = favoritesStorage;
     }
+
     localStorage.setItem("favorites", JSON.stringify(favoritesAtualizada));
   }
 
-  const customStyless = [styles.cardContainer];
-  if (customClass) {
-    customStyless.push(customClass);
-  }
-
   return (
-    <div className={customStyless}>
+    <div className={styles.cardContainer}>
       <img className={styles.imageFilme} src={image} />
       <div className={styles.cardContent}>
         <div className={styles.details}>
           <span>
             <img className={styles.imageRating} src="images/estrela.png" />
-            <p className={styles.rating}>{rating}</p>
+            <p>{rating}</p>
           </span>
 
           <span onClick={() => toggleFavorite()}>
@@ -79,4 +61,4 @@ function Card({
   );
 }
 
-export default Card;
+export default CardHome;
