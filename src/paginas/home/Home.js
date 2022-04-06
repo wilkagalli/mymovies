@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styles from "./Home.module.scss";
-import List from "../../components/list/List";
 import { getMoviesList } from "../../api/api";
 import { useEffect } from "react";
 import { useMovies } from "../../contexts/MoviesContext";
